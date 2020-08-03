@@ -9,7 +9,7 @@ COPY package.json .
 RUN npm install
 
 # Not need beacuse we binding volumes but still here for Dockerfile standalone without the docker-compose.
-#COPY . .
+COPY . .
 
 # Not need beacuse we binding volumes but still here for Dockerfile standalone without the docker-compose.
 CMD ["npm","run","start"]
